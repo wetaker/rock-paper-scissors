@@ -1,0 +1,75 @@
+html {
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, .8);
+  background: rgba(0,0,0,.8) bottom center;
+  background-size: cover;
+}
+
+#rock {
+	background: url("images/rock.jpg");
+}
+
+#paper {
+	background: url("images/paper.png");
+}
+
+#scissors {
+	background: url("images/scissors.jpg");
+	background-size: cover;
+}
+
+.container {
+	text-align: center;
+}
+
+div#buttonbox {
+	display: flex;
+	margin: 0 auto;
+	text-align: center;
+	width: 60vw;
+	justify-content: space-around;
+}
+
+button {
+	border-radius: 100%;
+	width: 15rem;
+	height: 15rem;
+	border: solid 3px;
+}
+
+button:hover {
+	 transform: scale(1.1);
+}
+
+div {
+	border: solid;
+	border-color: white;
+	padding: 10px;
+}
+
+div#scorebox {
+	display: flex;
+	justify-content: space-between;
+	border: .4rem solid black;
+	border-radius: .5rem;
+	margin: 1rem;
+	font-size: 1.5rem;
+	padding: 1rem .5rem;
+	transition: all .07s ease;
+	width: 94vw;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.4);
+	text-shadow: 0 0 .5rem black;
+}
+
+#pScore {
+	font-size: 6rem;
+	color: lime;
+}
+
+#cScore {
+	font-size: 6rem;
+	color: red;
+}

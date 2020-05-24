@@ -42,16 +42,16 @@
 	function game() {
 		var p1_score = 0;
 		var comp_score = 0;
-		for (var i = 0; i++; i<5) {
-			user_choice = prompt("Choose Rock, Paper, or Scissors.")
+		for (var i = 0; i<5; i++) {
+			user_choice = prompt("Choose Rock, Paper, or Scissors.", "Rock")
 			computer_choice = computerPlay()
 			round_result = playRPS(user_choice, computer_choice)
 			console.log(round_result)
 			if (round_result == 1) {
-				p1_score++
+				p1_score = p1_score + 1
 			}
 			else if (round_result == -1) {
-				comp_score++
+				comp_score = comp_score + 1
 			}
 		}
 		console.log("Player 1 achieved a score of " + p1_score)
